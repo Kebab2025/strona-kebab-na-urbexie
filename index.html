@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kebeb na Urbexie - Strona Główna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #2e7d32;
+      padding: 15px 30px;
+      color: white;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav {
+      background-color: #388e3c;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      background-color: #e0e0e0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Tutaj wstaw logo swojej partii -->
+  <img src="logo.png" alt="Logo Partii Kebeb na Urbexie" />
+  <h1>Partia Kebeb na Urbexie</h1>
+</header>
+
+<nav>
+  <a href="index.html">Strona Główna</a>
+  <a href="program.html">Program</a>
+  <a href="#poslowie">Lista Posłów</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section>
+  <h2>O nas</h2>
+  <p>
+    Jesteśmy ruchem, który łączy wolność, smak i przygodę. Nasza partia powstała w opuszczonej fabryce kebabów,
+    z miłości do eksploracji i kultury miejskiej. Walczymy o lepsze jutro dla każdego fana urbexu i dobrego jedzenia!
+  </p>
+</section>
+
+<section id="poslowie">
+  <h2>Lista Posłów</h2>
+  <ul>
+    <li>Janusz Kebabowicz – Okręg Mazowiecki</li>
+    <li>Monika Urbexa – Okręg Dolnośląski</li>
+    <li>Stanisław Grillowicz – Okręg Śląski</li>
+    <li>Weronika Latarkowa – Okręg Pomorski</li>
+  </ul>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <p>Email: kontakt@kebebnaurbexie.org</p>
+  <p>Instagram: @kebeb_urbex_party</p>
+  <p>Discord: KebebUrbexCommunity</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Partia Kebeb na Urbexie</p>
+</footer>
+
+</body>
+</html>
+<script>
+  let pass = prompt("Wpisz hasło:");
+  if (pass !== "urbex2025") {
+    document.body.innerHTML = "<h1>Nieautoryzowany dostęp</h1>";
+  }
+</script>
